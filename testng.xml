@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes">
+
+    <test name="Test Runner1">
+        <parameter name="url" value="https://www.youtube.com/"></parameter>
+        <classes>
+            <class name="org.selenium.practise.ParameterizationFromXml">
+                <methods>
+                    <include name="runnerTest1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Runner2">
+        <parameter name="url" value="https://www.flipkart.com/"></parameter>
+        <classes>
+            <class name="org.selenium.practise.ParameterizationFromXml">
+                <methods>
+                    <include name="runnerTest2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Runner3">
+        <parameter name="url" value="https://www.amazon.in/"></parameter>
+        <classes>
+            <class name="org.selenium.practise.ParameterizationFromXml">
+                <methods>
+                    <include name="runnerTest3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

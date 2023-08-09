@@ -1,0 +1,44 @@
+collection I
+List I
+	If we want the element in the order of insertion
+	If we want allow the duplicates
+	Classes
+		ArrayList
+		LinkedList
+		Vector
+set I
+	If we want the element in the sorted order
+	If we don't want allow the duplicates
+	Classes
+		HashSet
+		LinkedHashSet
+queue I
+	If we want FIFO concept
+	Classes
+		Priority Queue
+
+
+
+Map I
+	when we want to store the data in form of key and value
+	here keys are unique but not the value
+	Classes
+		HashMap
+		LinkedHashMap
+		HashTable
+
+
+
+Common methods that are there in Collection I
+	1. add(Object o)
+	2. addAll(Collection c)
+	3. remove(Object o)
+	4. removeAll(Collection c)
+	5. retainAll(Collection c)
+---------------------------------------------------
+	6. clear()
+	7. isEmpty()
+	8. size()
+	9. contains(Object o)
+	10. containsAll(Collection c)
+	11. toArray(Collection c)
