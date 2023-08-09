@@ -7,6 +7,7 @@ List I
 		LinkedList
 		Vector
 set I
+    If we don't want the order of insertion
 	If we want the element in the sorted order
 	If we don't want allow the duplicates
 	Classes
@@ -28,7 +29,6 @@ Map I
 		HashTable
 
 
-
 Common methods that are there in Collection I
 	1. add(Object o)
 	2. addAll(Collection c)
@@ -42,3 +42,63 @@ Common methods that are there in Collection I
 	9. contains(Object o)
 	10. containsAll(Collection c)
 	11. toArray(Collection c)
+
+Methods that are there in List I
+    1. add(Index i,Object o)
+    2. addAll(Index i,Collection c)
+    3. remove(Index i)
+    4. get(Index i)
+    5. set(Index i,Object o)
+
+    ArrayList
+        1.default size will be 10 and if we add one more element it will grow
+        2.when we want to retrieve the element frequently then we need to go for this ArrayList
+        3.when we have more insertion and deletion is there at this time ArrayList will move all the elements to right it will take time
+        4.all the above methods
+
+
+Note: collections is a class which is having some predefined methods like
+        1. Collections.reverse(Collection c)
+        2. Collections.sort(Collection c)
+        3. Collections.sort(Collection c,Collections.reverseOrder())
+        3. Collections.min(Collection c)
+        4. Collections.max(Collection c)
+        5. Collections.shuffle(Collection c)
+
+Note: converting array to arrayList
+        String[] arrayData={"Bangalore","Mysore","Tumkur"};
+        ArrayList al=new ArrayList(Arrays.asList(arrayData));
+
+    LinkedList [FILO]
+        1. when we want to insert and delete the elements then we go for LinkedList
+        2. retrieving the element is difficult here as it is storing the memory address of previous element in it
+        3. All the above methods with the following
+            a. addFirst(Object o)
+            b. addLast(Object o)
+            c. removeFirst(Object o)
+            d. removeLast(object o)
+            e. getFirst()
+            f. getLast()
+
+
+
+    HashSet [default size is 16]
+        1. insertion order is not maintained
+        2. duplicates are not allowed
+        3. it will insert the data using hashcode tech
+        4. store heterogeneous data
+        5. null can be stored
+        6. if we have more search then we need to go for HashSet
+
+    Note: we have something called load factor i.e., 0.75
+          [whenever the elements are getting stored in HashSet and if it is closes to 75% it will create new HashSet and move all the elements to it]
+
+          we can define our own load factor as HashSet hs=new HashSet(100,(float)0.95);
+
+
+    LinkedHashSet
+        1. Order is preserved here
+        2. all the concepts same as above
+
+
+
