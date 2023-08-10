@@ -29,32 +29,26 @@ Map I
 		HashTable
 
 
-Common methods that are there in Collection I
-	1. add(Object o)
-	2. addAll(Collection c)
-	3. remove(Object o)
-	4. removeAll(Collection c)
-	5. retainAll(Collection c)
----------------------------------------------------
-	6. clear()
-	7. isEmpty()
-	8. size()
-	9. contains(Object o)
-	10. containsAll(Collection c)
-	11. toArray(Collection c)
-
-Methods that are there in List I
-    1. add(Index i,Object o)
-    2. addAll(Index i,Collection c)
-    3. remove(Index i)
-    4. get(Index i)
-    5. set(Index i,Object o)
-
     ArrayList
         1.default size will be 10 and if we add one more element it will grow
         2.when we want to retrieve the element frequently then we need to go for this ArrayList
         3.when we have more insertion and deletion is there at this time ArrayList will move all the elements to right it will take time
-        4.all the above methods
+        4.Methods
+            	1. add(Object o)
+            	2. add(Index i,Object o)
+            	3. addAll(Collection c)
+            	4. addAll(Index i,Collection c)
+            	5. remove(Index i)
+            	6. remove(Object o)
+            	7. removeAll(Collection c)
+            	8. retainAll(Collection c)
+            	9. get(Index i)
+            	10.set(Index i,Object o)
+            	11.contains(Object o)
+            	12.containsAll(Collection c)
+            	13.isEmpty()
+            	14.size()
+            	15.toArray(Collection c)
 
 
 Note: collections is a class which is having some predefined methods like
@@ -101,4 +95,23 @@ Note: converting array to arrayList
         2. all the concepts same as above
 
 
-Note: need to remove this line
+    Queue I
+        When we want to insert or represent the elements which are prior to processing
+        Queue will follow FIFO
+        All the elements will be stored in Tail and it will get removed in Head
+
+
+                             LinkedList C    Priority Queue C
+            Insertion order   Maintained      Maintained
+            Duplicates         Allowed          Allowed
+            HeterogeneousData  Allowed        not allowed
+
+
+            1. add() //we can use it for adding the element or adding the object, if this is successful it will return true and if not it will return exceptions
+            2. offer() //we can use it for adding the element or adding the object, if this is successful it will return true and if not it will return false
+
+            3. element() // we can use it for getting the first element in the queue, if it is not having any element it will return exception
+            4. Peek() // we can use it for getting the first element in the queue, if it is not having any element it will return null
+
+            5. remove() //we can use it for returning the element and then remove from Queue, if queue is empty it will return exception.
+            6. pool() //we can use it for returning the element and then remove from Queue, if queue is empty it will return null.

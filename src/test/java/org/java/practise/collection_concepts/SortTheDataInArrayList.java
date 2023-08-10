@@ -1,4 +1,4 @@
-package org.java.practise;
+package org.java.practise.collection_concepts;
 
 import java.util.ArrayList;
 import java.util.Collection;
