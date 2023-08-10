@@ -115,3 +115,9 @@ Note: converting array to arrayList
 
             5. remove() //we can use it for returning the element and then remove from Queue, if queue is empty it will return exception.
             6. pool() //we can use it for returning the element and then remove from Queue, if queue is empty it will return null.
+
+
+
+    Map
+        HashMap
+        LinkedHashMap
