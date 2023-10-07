@@ -3,39 +3,44 @@ package org.selenium.practise;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Sample2 {
+    List<String> title;
 
+    @BeforeClass
+    public void setUp() {
+        title = new ArrayList<>();
+    }
 
-    @Test(priority = 0)
+    @Test()
     public void brunnerTest1() {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.youtube.com/");
-        System.out.println(driver.getTitle());
-        driver.quit();
+        title.add("http://106.51.74.69:8000/login");
     }
 
 
-    @Test(priority = 0)
+    @Test()
     public void crunnerTest2() {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.youtube.com/");
-        System.out.println(driver.getTitle());
-        driver.quit();
+        title.add("https://www.youtube.com/");
     }
 
-    @Test(priority = 0)
+    @Test()
     public void arunnerTest3() {
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.youtube.com/");
-        System.out.println(driver.getTitle());
-        driver.quit();
+        title.add("https://acrossgeo.com/login");
     }
 
+    @AfterClass()
+    public void arunnerTest4() {
+        for (String s : title) {
+            System.out.println(s);
+        }
+    }
 
 
 }

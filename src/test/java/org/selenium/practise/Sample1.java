@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Sample1 {
 
-    @Test(invocationCount = 2, threadPoolSize = 4)
+    @Test(invocationCount = 4, threadPoolSize = 4)
     public void runnerTest1() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
