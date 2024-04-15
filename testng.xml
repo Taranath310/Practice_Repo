@@ -9,6 +9,7 @@
                     <include name="brunnerTest1"/>
                     <include name="crunnerTest2"/>
                     <include name="arunnerTest3"/>
+                    <include name="arunnerTest3"/>
                 </methods>
             </class>
         </classes>
